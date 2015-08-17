@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Biyao</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="fragment1">fragment1</string>
+    <string name="fragment2">fragment2</string>
+    <string name="fragment3">fragment3</string>
+
+
+
+    <drawable name="clr_normal">#00000000</drawable>
+    <drawable name="clr_pressed">#a44100</drawable>
+</resources>

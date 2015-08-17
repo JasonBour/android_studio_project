@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="500dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/bottomList"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black"
+            android:orientation="horizontal" >
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+
+                <RadioButton
+                    android:id="@+id/Fragment1"
+                    style="@style/footbar"
+                    android:drawableTop="@mipmap/icon_dropdownmenu_home"
+                    android:paddingTop="8dp"
+                    android:text="home"
+                    android:focusable="true"
+                    android:background="@drawable/radiobutton"
+                    android:checked="true"/>
+
+
+
+
+                <RadioButton
+                    android:id="@+id/Fragment2"
+                    style="@style/footbar"
+                    android:drawableTop="@mipmap/icon_dropdownmenu_cart"
+                    android:paddingTop="8dp"
+                    android:text="购物车"
+                    android:background="@drawable/radiobutton" />
+
+
+
+
+
+                <RadioButton
+                    android:id="@+id/Fragment3"
+                    style="@style/footbar"
+                    android:drawableTop="@mipmap/icon_dropdownmenu_personalcenter"
+                    android:paddingTop="8dp"
+                    android:text="个人中心"
+                    android:background="@drawable/radiobutton"/>
+
+
+
+
+
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
