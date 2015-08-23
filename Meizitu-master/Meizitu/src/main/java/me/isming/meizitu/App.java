@@ -2,11 +2,15 @@ package me.isming.meizitu;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.SharedPreferences;
+
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
+
+import me.isming.meizitu.util.CustomConstants;
 
 /**
  * Created by Sam on 14-3-24.
@@ -19,6 +23,7 @@ public class App extends Application {
         super.onCreate();
         sContext = getApplicationContext();
         initImageLoader(getApplicationContext());
+        removeTempFromPref();
     }
 
     public static Context getContext() {
@@ -35,4 +40,14 @@ public class App extends Application {
                 .build();
         ImageLoader.getInstance().init(config);
     }
+
+    private void removeTempFromPref()
+    {
+        SharedPreferences sp = getSharedPreferences(
+                CustomConstants.APPLICATION_NAME, MODE_PRIVATE);
+        sp.edit().remove(CustomConstants.PREF_TEMP_IMAGES).commit();
+    }
+
+
+
 }

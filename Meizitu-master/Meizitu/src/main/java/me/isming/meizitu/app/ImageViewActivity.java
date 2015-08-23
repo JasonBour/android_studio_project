@@ -1,5 +1,6 @@
 package me.isming.meizitu.app;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Environment;
@@ -118,8 +119,10 @@ public class ImageViewActivity extends BaseActivity implements ViewPager.OnPageC
             addMyPhoto.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
-
+                Intent intent = new Intent();
+                    intent.setClass(ImageViewActivity.this,me.isming.meizitu.view.PublishActivity.class);
+                    startActivity(intent);
+                    finish();
                 }
             });
             DisplayImageOptions options = new DisplayImageOptions.Builder().cacheOnDisc(true)
