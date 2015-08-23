@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:background="#7b1fa2"
+    android:layout_marginTop="@dimen/layout_margin_top"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tishi_back"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+
+        android:textSize="18sp"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/tishi"
+     android:background="#A336B6"
+        android:padding="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/addMyPhoto"
+        android:layout_alignTop="@+id/textView"
+        android:src="@drawable/btn_album_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

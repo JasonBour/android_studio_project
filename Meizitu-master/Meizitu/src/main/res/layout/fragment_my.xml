@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+ <LinearLayout
+    android:layout_weight="4"
+     android:layout_width="fill_parent"
+     android:layout_height="match_parent"
+     android:background="#FFE8A0">
+
+     <TextView
+         android:clickable="true"
+         android:background="@drawable/fragment_my"
+         android:gravity="center"
+         android:text="我的订单"
+         android:layout_weight="1"
+         android:id="@+id/text1"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+
+         />
+     <TextView
+         android:gravity="center"
+         android:text="我的购物车"
+         android:layout_weight="1"
+         android:id="@+id/text2"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:clickable="true"
+         android:background="@drawable/fragment_my"
+         />
+     <TextView
+         android:gravity="center"
+         android:text="我的退款"
+         android:layout_weight="1"
+         android:id="@+id/text3"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:clickable="true"
+         android:background="@drawable/fragment_my"
+         />
+ </LinearLayout>
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</LinearLayout>

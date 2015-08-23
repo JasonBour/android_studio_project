@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="190sp"
+
+        android:layout_alignParentTop="true"
+        android:background="#9c27b0">
+        <ImageView
+            android:id="@+id/profit"
+            android:src="@drawable/ic_profile"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+            android:layout_width="80sp"
+            android:layout_height="80sp"/>
+
+
+
+    </RelativeLayout>
+
+
+<ListView
+
+        android:layout_below="@+id/profit"
+        android:id="@+id/list_view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:choiceMode="singleChoice"
+              android:divider="@android:color/darker_gray"
+              android:dividerHeight="0.6dp"
+              android:background="#ffffff"
+
+
+             >
+
+</ListView>
+
+
+</LinearLayout>
+  <!--  tools:context="me.isming.meizitu.app.NavigationDrawerFragment"-->
